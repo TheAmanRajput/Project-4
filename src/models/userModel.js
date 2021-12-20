@@ -23,13 +23,13 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
+        lowercase: true,
         trim: true
     },
     password: {
         type: String,
         required: true,
-        lowercase: true,
-        trim: true,
+        trim: true
     },
     address: {
         street: {
