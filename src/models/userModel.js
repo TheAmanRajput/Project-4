@@ -22,14 +22,14 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
+        lowercase: true,
         unique: true,
         trim: true
     },
     password: {
         type: String,
         required: true,
-        lowercase: true,
-        trim: true,
+        trim: true
     },
     address: {
         street: {
